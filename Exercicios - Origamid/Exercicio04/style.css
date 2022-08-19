@@ -1,0 +1,27 @@
+* {
+  text-decoration: none;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
+div {
+  background: red;
+}
+
+a {
+  background: green;
+}
+
+strong {
+  background: blue;
+}
+
+h1 {
+  background-color: yellow;
+}
+
+span {
+  background: gray;
+}

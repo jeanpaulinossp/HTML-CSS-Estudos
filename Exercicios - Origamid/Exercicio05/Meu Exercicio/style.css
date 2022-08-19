@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dentro {
+  width: 800px;
+  height: 200px;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.modelo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.valor {
+  font-size: 24px;
+  font-weight: 700;
+  color: #febe01;
+}
+
+.info {
+  color: #febe01;
+  font-weight: 500;
+}
+
+.descricao {
+  display: block;
+  margin-top: 20px;
+}
+
+.botao {
+  background-color: #febe01;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+}
