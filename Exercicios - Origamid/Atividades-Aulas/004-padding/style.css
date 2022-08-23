@@ -1,0 +1,6 @@
+span {
+  display: inline-block;
+  background: #ddd;
+  padding: 40px 100px 200px 10px;
+  border: 10px solid black;
+}
