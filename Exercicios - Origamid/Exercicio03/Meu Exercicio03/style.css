@@ -1,11 +1,38 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --cor-background-pagina: #f7f7f7;
+  --cor-background-itens: #fff;
+  --cor-background-itens-rover: #f7f7f7;
+  --cor-texto: #000;
+  --cor-logo: #000;
+  --cor-botao: #000
+  --cor-estilizada: rgba(0, 0, 0, 0.2);
+  --onda: url(img/onda.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-background-pagina: #111;
+    --cor-background-itens: #000;
+    --cor-background-itens-rover: #111;
+    --cor-texto: #fff;
+    --cor-logo: #fff;
+    --cor-botao: #fff
+    --cor-estilizada: rgba(255, 255, 255, 0.2);
+    --onda: url(img/onda-dark.svg);
+  }
+}
+
 body {
   display: grid;
   gap: 3.75rem;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0rem;
-  background: #f7f7f7;
+  background: var(--cor-background-pagina);
   justify-items: center;
   margin-top: 3.75rem;
+  color: var(--cor-texto);
 }
 
 img {
@@ -50,16 +77,16 @@ p {
 
 .menu a {
   display: block;
-  background: #fff;
+  background: var(--cor-background-itens);
   padding: 0.93rem 1.875rem;
   border-radius: 0.25rem;
-  color: #000;
+  color: var(--cor-texto);
   text-transform: uppercase;
   border: 2px solid transparent;
 }
 
 .menu a:hover {
-  border-color: #e21;
+  border-color: var(--cor-primaria);
   /* a borda ja foi definida acima como transparente e o hover só ira mudar a cor. A borda deve ser definida acima para que não haja alteração no tamanho do elemento ao chamar o hover*/
 }
 
@@ -76,7 +103,7 @@ p {
 }
 
 .introducao {
-  background: #fff;
+  background: var(--cor-background-itens);
   padding: 2.5rem;
   text-align: right;
   position: relative;
@@ -94,36 +121,36 @@ p {
   content: "";
   width: 3.75rem;
   height: 0.25rem;
-  background: #e21;
+  background: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
 }
 
 .botao {
-  background: #e21;
-  color: #fff;
+  background: var(--cor-primaria);
+  color: var(--cor-botao);
   padding: 0.9375rem 1.875rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .botao:hover {
-  background-color: #900;
+  background-color: var(--cor-primaria-escura);
 }
 
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--cor-estilizada);
   text-align: right;
   padding: 2.5rem;
   align-self: center;
-  background-image: url(onda.svg);
+  background-image: var(--onda);
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--cor-background-itens);
   padding: 2.5rem;
 }
 
@@ -136,11 +163,11 @@ p {
 }
 
 .vantagens-item:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--cor-background-itens-rover);
 }
 
 .vantagens-item:hover {
-  border-color: #e21;
+  border-color: var(--cor-primaria);
 }
 
 .vantagens-item p {
@@ -148,7 +175,7 @@ p {
 }
 
 .rodape {
-  background: #fff;
+  background: var(--cor-background-itens);
   width: 100%;
   text-align: center;
   padding: 2.5rem;
@@ -171,9 +198,6 @@ p {
   .conteudo {
     grid-template-columns: 1fr;
     margin: 0.5rem;
-  }
-
-  .conteudo img {
   }
 
   .introducao {
